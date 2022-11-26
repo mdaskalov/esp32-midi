@@ -16,6 +16,21 @@
   #define TXT_SIZE    2
 
   #define STAFF_LEN   17
+#endif
+
+#ifdef LILYGO
+#include "Arduino.h"
+#include "TFT_eSPI.h" // patched version
+#include <Button2.h>
+  #define NAME        "LILYGO"
+
+  #define BUTTON_1    PIN_BUTTON_1
+  #define BUTTON_2    PIN_BUTTON_2
+
+  #define ROTATION    3
+  #define TXT_SIZE    2
+
+  #define STAFF_LEN   17
 #else
   #include <SPI.h>
   #include <TFT_eSPI.h>
